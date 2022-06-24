@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <item
+        android:title="HOME"
+        android:id="@+id/home"
+        android:icon="@drawable/ic_baseline_home_24"
+        />
+
+    <item
+        android:title="SCHEDULE"
+        android:id="@+id/schedule"
+        android:icon="@drawable/ic_baseline_calendar_today_24"
+        />
+
+    <item
+        android:title="MESSAGE"
+        android:id="@+id/message"
+        android:icon="@drawable/ic_baseline_message_24"
+        />
+
+    <item
+        android:title="NOTIFICATION"
+        android:id="@+id/notification"
+        android:icon="@drawable/ic_baseline_circle_notifications_24"
+        />
+    <item
+        android:title="REPORT"
+        android:id="@+id/report"
+        android:icon="@drawable/ic_baseline_payments_24"
+        />
+
+    <item
+        android:title="LOGOUT"
+        android:id="@+id/logout"
+        android:icon="@drawable/ic_baseline_logout_24"
+        />
+
+
+
+</menu>

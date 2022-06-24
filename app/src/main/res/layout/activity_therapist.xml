@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    tools:context=".Therapist">
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_centerHorizontal="true"
+        android:background="@color/black"
+        >
+
+        <RelativeLayout
+            android:layout_width="344dp"
+            android:layout_height="match_parent"
+            android:background="@color/black">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/therapistpicture"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_marginTop="100dp"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/therapist"
+
+                />
+
+
+            <Button
+                android:id="@+id/selfie"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/therapistpicture"
+                android:layout_marginTop="20dp"
+                android:text="SELECT FILE" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/therapistpicture"
+                android:layout_marginTop="30dp"
+                android:layout_toRightOf="@+id/selfie"
+                android:text="UPLOAD SELF-PORTRAIT"
+                android:layout_marginLeft="10dp"
+                android:id="@+id/selfieText"
+                android:textColor="@color/white"
+                />
+
+
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/proceed"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@+id/selfie"
+                android:layout_marginTop="60dp"
+                android:text="PROCEED"/>
+
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="STEP 1"
+                android:textColor="@color/white"
+                android:layout_below="@id/proceed"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="60dp"/>
+
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+
+</RelativeLayout>

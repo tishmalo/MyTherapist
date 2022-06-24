@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    tools:context=".Therapist2">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_centerHorizontal="true"
+        >
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="@color/black"
+            >
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/therapistpicture"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_marginTop="100dp"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/therapist"
+
+                />
+
+
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/therapistpicture"
+                android:layout_marginTop="30dp"
+                android:id="@+id/identity"
+                android:text="SELECT FILE"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/identitytext"
+                android:layout_below="@+id/therapistpicture"
+                android:layout_toRightOf="@+id/identity"
+                android:text="UPLOAD IDENTITY CARD"
+                android:textColor="@color/white"
+                android:layout_marginTop="40dp"
+                android:layout_marginLeft="10dp"/>
+
+
+
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/proceed"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@+id/identity"
+                android:layout_marginTop="60dp"
+                android:text="PROCEED"/>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="STEP 2"
+
+                android:textColor="@color/white"
+                android:layout_below="@id/proceed"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="60dp"/>
+
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+
+
+
+
+
+</RelativeLayout>

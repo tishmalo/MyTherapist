@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.mytherapist">
+
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.MyTherapist"
+        tools:replace="android:icon">
+        <activity android:name=".ChooseTherapist"></activity>
+        <activity android:name=".therapistlist" />
+        <activity android:name=".Pay" />
+        <activity android:name=".TherapistPage" />
+        <activity android:name=".Therapist3" />
+        <activity android:name=".Therapist2" />
+        <activity android:name=".VideoChat" />
+        <activity android:name=".Control2" />
+        <activity android:name=".Control" />
+        <activity android:name=".Schedule" />
+        <activity android:name=".PatientPage" />
+        <activity android:name=".Patient2" />
+        <activity android:name=".PROCEED" />
+        <activity android:name=".Complaint" />
+        <activity android:name=".underReview" />
+        <activity android:name=".verifyTherapist" />
+        <activity android:name=".viewTherapist" />
+        <activity android:name=".viewPatient" />
+        <activity android:name=".Admin" />
+        <activity android:name=".Register" />
+        <activity android:name=".Therapist" />
+        <activity android:name=".Patient" />
+        <activity android:name=".Login">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".MainActivity" />
+    </application>
+
+</manifest>

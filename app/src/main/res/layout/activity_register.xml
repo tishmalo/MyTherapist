@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    android:orientation="vertical"
+    tools:context=".Register">
+
+
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_gravity="center_horizontal"
+        android:background="@color/black"
+
+        >
+        <ScrollView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="@color/black">
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:background="@color/black"
+
+            >
+
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+                android:id="@+id/icon"
+
+                android:src="@drawable/mytherapist"/>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/sign"
+            android:text="SIGN UP"
+            android:textColor="@color/white"
+            android:textSize="30dp"
+            android:layout_below="@+id/icon"
+            android:layout_centerHorizontal="true"
+
+            />
+
+
+            <EditText
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/username"
+                android:layout_below="@+id/sign"
+                android:layout_marginTop="15dp"
+                android:hint="ENTER USERNAME"
+                android:textColorHint="@color/white"/>
+
+
+            <EditText
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/email"
+                android:layout_below="@+id/username"
+                android:layout_marginTop="15dp"
+                android:hint="ENTER EMAIL"
+                android:textColorHint="@color/white"
+                />
+            <EditText
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/password"
+                android:layout_below="@id/email"
+                android:hint="ENTER PASSWORD"
+                android:layout_marginTop="15dp"
+                android:inputType="textPassword"
+                android:textColorHint="@color/white"/>
+            <EditText
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/cpassword"
+                android:layout_below="@+id/password"
+                android:hint="CONFIRM PASSWORD"
+                android:layout_marginTop="15dp"
+                android:inputType="textPassword"
+                android:textColorHint="@color/white"/>
+            <Button
+                android:layout_width="86dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/cpassword"
+                android:id="@+id/patient"
+                android:text="PATIENT"
+                android:layout_marginRight="18dp"
+                android:layout_marginTop="20dp"
+                android:textSize="10dp"/>
+
+            <Button
+                android:layout_width="86dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/cpassword"
+                android:layout_toRightOf="@id/patient"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="18dp"
+                android:text="THERAPIST"
+                android:id="@+id/therapist"
+                android:textSize="8dp"/>
+
+            <TextView
+                android:layout_below="@id/therapist"
+                android:id="@+id/already"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:textColor="@color/white"
+                android:text="Already have an account?" />
+
+
+        </RelativeLayout>
+        </ScrollView>
+
+
+
+    </androidx.cardview.widget.CardView>
+
+
+
+</LinearLayout>

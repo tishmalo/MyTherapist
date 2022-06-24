@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    tools:context=".Login">
+<androidx.cardview.widget.CardView
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:layout_marginLeft="10dp"
+    android:layout_marginRight="10dp"
+    android:layout_marginTop="25dp"
+    android:layout_gravity="center_horizontal"
+    android:background="@color/black"
+    >
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:background="@color/black"
+        android:layout_gravity="center">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:layout_width="250dp"
+            android:layout_height="250dp"
+            android:src="@drawable/mytherapist"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/icon"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="LOG IN"
+            android:layout_below="@+id/icon"
+            android:textColor="@color/white"
+            android:textSize="35dp"
+            android:id="@+id/log"
+            android:layout_centerHorizontal="true"
+            />
+        <EditText
+            android:id="@+id/email"
+            android:layout_marginTop="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/log"
+            android:hint="EMAIL"
+            android:textColorHint="@color/white"/>
+
+        <EditText
+            android:id="@+id/password"
+            android:layout_marginTop="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/email"
+            android:hint="PASSWORD"
+            android:inputType="textPassword"
+            android:textColorHint="@color/white"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/password"
+            android:id="@+id/forgot"
+            android:layout_marginTop="40dp"
+            android:text="Forgot your password"
+            android:textColor="@color/white"
+            android:layout_alignParentRight="true"
+            />
+
+
+
+        <Button
+            android:layout_marginTop="20dp"
+            android:layout_width="150dp"
+            android:id="@+id/login"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:text="PATIENT"
+            android:layout_below="@+id/forgot"/>
+
+        <Button
+            android:layout_marginTop="20dp"
+            android:layout_width="150dp"
+            android:id="@+id/logintherapist"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:text="THERAPIST"
+
+            android:layout_below="@+id/forgot"/>
+
+
+        <TextView
+            android:layout_marginTop="30dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="NOT YET REGISTERED?"
+            android:layout_below="@+id/login"
+            android:id="@+id/already"
+            android:layout_alignParentRight="true"
+            android:textColor="@color/white"/>
+
+    </RelativeLayout>
+
+
+
+
+
+
+
+</androidx.cardview.widget.CardView>
+
+</LinearLayout>

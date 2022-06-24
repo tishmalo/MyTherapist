@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:title="PATIENTS"
+        android:id="@+id/patient"
+        android:icon="@drawable/ic_baseline_sick_24"
+        />
+
+    <item
+        android:title="THERAPIST"
+        android:id="@+id/therapist"
+        android:icon="@drawable/ic_baseline_local_hospital_24"
+        />
+
+
+
+</menu>
