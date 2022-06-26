@@ -21,23 +21,25 @@
             android:background="@color/black">
 
             <EditText
+                android:id="@+id/amount"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:id="@+id/amount"
+                android:layout_centerInParent="true"
                 android:hint="ENTER AMOUNT"
                 android:inputType="phone"
-                android:layout_centerInParent="true"
-                android:textColorHint="@color/white"/>
+                android:minHeight="48dp"
+                android:textColorHint="@color/white" />
 
             <EditText
+                android:id="@+id/phone"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_below="@+id/amount"
-                android:id="@+id/phone"
                 android:layout_centerHorizontal="true"
+                android:layout_marginTop="20dp"
                 android:hint="ENTER YOUR NUMBER"
-                android:textColorHint="@color/white"
-                android:layout_marginTop="20dp"/>
+                android:minHeight="48dp"
+                android:textColorHint="@color/white" />
             <Button
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"

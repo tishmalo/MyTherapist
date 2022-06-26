@@ -21,6 +21,12 @@
         />
 
     <item
+        android:title="THERAPIST LIST"
+        android:id="@+id/therapistlist"
+        android:icon="@drawable/ic_baseline_filter_list_24"
+        />
+
+    <item
         android:title="NOTIFICATION"
         android:id="@+id/notification"
         android:icon="@drawable/ic_baseline_circle_notifications_24"

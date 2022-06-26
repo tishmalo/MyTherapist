@@ -139,7 +139,9 @@ public class PatientPage extends AppCompatActivity implements NavigationView.OnN
                 break;
 
 
-            case R.id.therapist:
+            case R.id.therapistlist:
+                Intent intent3= new Intent(PatientPage.this, therapistlist.class);
+                startActivity(intent3);
                 break;
 
 
