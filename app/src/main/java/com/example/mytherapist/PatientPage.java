@@ -305,7 +305,7 @@ public class PatientPage extends AppCompatActivity implements NavigationView.OnN
         Request request = new Request.Builder()
                 .url("https://heath-news.p.rapidapi.com/news")
                 .get()
-                .addHeader("X-RapidAPI-Key", "9fa6a918dcmsh7f0406f36768b6ap19199bjsna8ac11f36316")
+                .addHeader("X-RapidAPI-Key", "#")
                 .addHeader("X-RapidAPI-Host", "heath-news.p.rapidapi.com")
                 .build();
 
