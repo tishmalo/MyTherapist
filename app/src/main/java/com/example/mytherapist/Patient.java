@@ -3,8 +3,10 @@ package com.example.mytherapist;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.Toolbar;
 
 import android.content.Intent;
+import android.content.pm.ActivityInfo;
 import android.graphics.Bitmap;
 import android.net.Uri;
 import android.os.Bundle;
@@ -14,6 +16,7 @@ import android.widget.Button;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.bumptech.glide.Glide;
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.OnFailureListener;
 import com.google.android.gms.tasks.OnSuccessListener;
@@ -43,13 +46,25 @@ public class Patient extends AppCompatActivity {
     DatabaseReference ref;
 
     private FirebaseAuth mAuth;
-
+    Toolbar toolbar;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_patient);
 
+        setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);
+
+        toolbar=findViewById(R.id.toolBar);
+        setSupportActionBar(toolbar);
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+        //  getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+        toolbar.setNavigationOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                finish();
+            }
+        });
 
         /**
          * Link java to xml
@@ -113,7 +128,7 @@ public class Patient extends AppCompatActivity {
 
 
 
-                final String email12= email.trim();
+                final String username12= Utils.sanitizeusername(username);
 
 
 
@@ -121,11 +136,11 @@ public class Patient extends AppCompatActivity {
 
                 DatabaseReference userDatabaseRef;
 
-                userDatabaseRef= FirebaseDatabase.getInstance().getReference("PatientProfile").child(username);
+                userDatabaseRef= FirebaseDatabase.getInstance().getReference("PatientProfile").child(FirebaseAuth.getInstance().getCurrentUser().getUid());
 
                 HashMap map= new HashMap();
 
-                map.put("username",username);
+                map.put("username",username12);
                 map.put("email",email);
 
                 userDatabaseRef.updateChildren(map).addOnCompleteListener(new OnCompleteListener() {
@@ -179,7 +194,7 @@ public class Patient extends AppCompatActivity {
                                         String imageuri = uri.toString();
                                         Map getimagemap = new HashMap();
                                         getimagemap.put("profileimage", imageuri);
-                                        getimagemap.put("username", username);
+                                        getimagemap.put("username", username12);
                                         getimagemap.put("email", email);
 
 
@@ -212,7 +227,7 @@ public class Patient extends AppCompatActivity {
                     });
 
                     Intent intent3 = new Intent(Patient.this, Patient2.class);
-                    intent3.putExtra("username", username);
+                    intent3.putExtra("username", username12);
                     intent3.putExtra("email", email);
                     intent3.putExtra("password", password);
                     Patient.this.startActivity(intent3);
@@ -265,6 +280,8 @@ public class Patient extends AppCompatActivity {
 
 
         selfieText.setText(photouri);
+
+            Glide.with(Patient.this).load(resulturi).into(profilepic);
 
 
 

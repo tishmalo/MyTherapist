@@ -6,6 +6,7 @@ import androidx.appcompat.widget.Toolbar;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
+import android.content.pm.ActivityInfo;
 import android.os.Bundle;
 import android.view.View;
 
@@ -38,6 +39,9 @@ public class therapistlist extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_therapistlist);
 
+
+        setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);
+
         toolbar=findViewById(R.id.selectedtoolbar);
         setSupportActionBar(toolbar);
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
@@ -50,7 +54,7 @@ public class therapistlist extends AppCompatActivity {
         });
 
 
-        recyclerView=findViewById(R.id.selectorecycler);
+        recyclerView=findViewById(R.id.selectedrecycler);
         LinearLayoutManager linearLayoutManager=new LinearLayoutManager(this);
         recyclerView.setHasFixedSize(true);
         linearLayoutManager.setStackFromEnd(true);
@@ -58,26 +62,27 @@ public class therapistlist extends AppCompatActivity {
         recyclerView.setLayoutManager(linearLayoutManager);
 
         userList= new ArrayList<>();
-        userAdapter= new PatientListAdapter(therapistlist.this, userList);
-        recyclerView.setAdapter(userAdapter);
+
 
 
         DatabaseReference ref;
-        ref= FirebaseDatabase.getInstance().getReference("Therapist");
+        ref= FirebaseDatabase.getInstance().getReference().child("Therapist_Profile");
         ref.addValueEventListener(new ValueEventListener() {
             @Override
             public void onDataChange(@NonNull DataSnapshot snapshot) {
 
                 userList.clear();
 
-                for(DataSnapshot ds: snapshot.getChildren()){
 
-                    TherapistList ls= ds.getValue(TherapistList.class);
-                    userList.add(ls);
+                    for(DataSnapshot ds: snapshot.getChildren()) {
+                        TherapistList ls = ds.getValue(TherapistList.class);
+                        userList.add(ls);
+                    }
 
-                }
+                userAdapter= new PatientListAdapter(therapistlist.this, userList);
+                recyclerView.setAdapter(userAdapter);
 
-                userAdapter.notifyDataSetChanged();
+
 
             }
 

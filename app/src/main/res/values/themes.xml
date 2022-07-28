@@ -17,4 +17,10 @@
         <item name="windowNoTitle">true</item>
 
     </style>
+    <style name="Theme.MyTherapist.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+    <style name="Theme.MyTherapist.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+    <style name="Theme.MyTherapist.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
 </resources>

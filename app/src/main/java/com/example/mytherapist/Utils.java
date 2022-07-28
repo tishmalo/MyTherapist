@@ -12,6 +12,15 @@ public class Utils {
         return new SimpleDateFormat("yyyyMMddHHmmss", Locale.getDefault()).format(new Date());
     }
 
+    public static String sanitizeusername(String username){
+
+       username.replaceAll("['.', '#', '$', '[', ']']", "");
+
+       return username;
+
+
+    }
+
     public static String sanitizePhoneNumber(String phone) {
 
         if (phone.equals("")) {

@@ -32,15 +32,14 @@
             android:id="@+id/icon"/>
 
         <TextView
+            android:id="@+id/log"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="LOG IN"
             android:layout_below="@+id/icon"
-            android:textColor="@color/white"
-            android:textSize="35dp"
-            android:id="@+id/log"
             android:layout_centerHorizontal="true"
-            />
+            android:text="LOG IN"
+            android:textColor="@color/white"
+            android:textSize="35dp" />
         <EditText
             android:id="@+id/email"
             android:layout_marginTop="15dp"

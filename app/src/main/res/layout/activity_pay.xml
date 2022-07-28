@@ -5,9 +5,18 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/black"
+    android:background="@color/background"
     tools:context=".Pay">
-
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/barLayout1">
+        <androidx.appcompat.widget.Toolbar
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/toolBar"
+            android:background="@color/mintgreen"/>
+    </com.google.android.material.appbar.AppBarLayout>
 
     <androidx.cardview.widget.CardView
         android:layout_width="wrap_content"
@@ -18,7 +27,7 @@
         <RelativeLayout
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
-            android:background="@color/black">
+            android:background="@color/background">
 
             <EditText
                 android:id="@+id/amount"
@@ -28,7 +37,7 @@
                 android:hint="ENTER AMOUNT"
                 android:inputType="phone"
                 android:minHeight="48dp"
-                android:textColorHint="@color/white" />
+                android:textColorHint="@color/Text" />
 
             <EditText
                 android:id="@+id/phone"
@@ -39,7 +48,7 @@
                 android:layout_marginTop="20dp"
                 android:hint="ENTER YOUR NUMBER"
                 android:minHeight="48dp"
-                android:textColorHint="@color/white" />
+                android:textColorHint="@color/Text" />
             <Button
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"

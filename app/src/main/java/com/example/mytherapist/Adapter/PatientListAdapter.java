@@ -1,6 +1,7 @@
 package com.example.mytherapist.Adapter;
 
 import android.content.Context;
+import android.content.Intent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -12,6 +13,7 @@ import androidx.recyclerview.widget.RecyclerView;
 import com.bumptech.glide.Glide;
 import com.example.mytherapist.Model.TherapistList;
 import com.example.mytherapist.R;
+import com.example.mytherapist.TherapistReviews;
 
 import java.util.List;
 
@@ -31,7 +33,7 @@ public class PatientListAdapter extends RecyclerView.Adapter<PatientListAdapter.
     @Override
     public ViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
 
-        View view= LayoutInflater.from(context).inflate(R.layout.activity_therapistlist,parent,false);
+        View view= LayoutInflater.from(context).inflate(R.layout.therapist_displayed,parent,false);
 
         return new ViewHolder(view);
     }
@@ -41,10 +43,22 @@ public class PatientListAdapter extends RecyclerView.Adapter<PatientListAdapter.
 
         final TherapistList therapistList= userList.get(position);
 
-        holder.username.setText(therapistList.getUsername());
-        holder.email.setText(therapistList.getEmail());
+        holder.username.setText(therapistList.getusername());
+        holder.email.setText(therapistList.getemail());
 
-        Glide.with(context).load(therapistList.getProfileimage()).into(holder.circleImageView);
+        Glide.with(context).load(therapistList.getprofileimage()).into(holder.circleImageView);
+
+        holder.itemView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent= new Intent(context, TherapistReviews.class);
+                intent.putExtra("email",therapistList.getemail());
+                intent.putExtra("profileimage", therapistList.getprofileimage());
+                context.startActivity(intent);
+
+
+            }
+        });
 
 
     }
@@ -65,6 +79,10 @@ public class PatientListAdapter extends RecyclerView.Adapter<PatientListAdapter.
             username= itemView.findViewById(R.id.username);
             email=itemView.findViewById(R.id.email);
             circleImageView= itemView.findViewById(R.id.userprofileimage);
+
+
+
+
 
 
         }

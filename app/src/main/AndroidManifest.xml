@@ -1,46 +1,110 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    package="com.example.mytherapist">
+    package="com.example.mytherapist" >
 
     <uses-permission android:name="android.permission.WAKE_LOCK" />
 
     <application
         android:allowBackup="true"
-        android:icon="@mipmap/ic_launcher"
+        android:icon="@drawable/appicon"
         android:label="@string/app_name"
-        android:roundIcon="@mipmap/ic_launcher_round"
+        android:roundIcon="@drawable/appicon"
         android:supportsRtl="true"
         android:theme="@style/Theme.MyTherapist"
-        tools:replace="android:icon">
-        <activity android:name=".ChooseTherapist"></activity>
+        android:usesCleartextTraffic="true"
+        tools:replace="android:icon" >
+        <activity
+            android:name=".SplashScreen"
+            android:exported="true" >
+
+
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".AdminVerifyPatient"
+            android:exported="false" />
+        <activity
+            android:name=".AdminVerifyTherapist"
+            android:exported="false" />
+        <activity
+            android:name=".TherapistNumber"
+            android:exported="false" />
+        <activity
+            android:name=".ProbationTherapist3"
+            android:exported="false" />
+        <activity
+            android:name=".ProbationTherapist2"
+            android:exported="false" />
+        <activity
+            android:name=".ProbationTherapist"
+            android:exported="false" />
+        <activity
+            android:name=".ProbationPatient2"
+            android:exported="false" />
+        <activity
+            android:name=".ProbationPatient"
+            android:exported="false" />
+        <activity
+            android:name=".Probation"
+            android:exported="false" />
+        <activity
+            android:name=".AdminTherapist"
+            android:exported="false" />
+        <activity
+            android:name=".PatientAdmin"
+            android:exported="false" />
+        <activity
+            android:name=".AdminLogin"
+            android:exported="false" />
+        <activity
+            android:name=".PatientChatList"
+            android:exported="false" />
+        <activity
+            android:name=".PatientMessage"
+            android:exported="false" />
+        <activity
+            android:name=".ResetPassword"
+            android:exported="false" />
+        <activity
+            android:name=".PatientNotification"
+            android:exported="false" />
+        <activity
+            android:name=".ChatList"
+            android:exported="false" />
+        <activity
+            android:name=".MessageActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Therapist_Schedule"
+            android:exported="false" />
+        <activity
+            android:name=".TherapistReviews"
+            android:exported="false" />
         <activity android:name=".therapistlist" />
         <activity android:name=".Pay" />
         <activity android:name=".TherapistPage" />
         <activity android:name=".Therapist3" />
         <activity android:name=".Therapist2" />
-        <activity android:name=".VideoChat" />
-        <activity android:name=".Control" />
+        <activity android:name=".Reviews" />
         <activity android:name=".Schedule" />
         <activity android:name=".PatientPage" />
         <activity android:name=".Patient2" />
-        <activity android:name=".PROCEED" />
-        <activity android:name=".Complaint" />
-        <activity android:name=".underReview" />
-        <activity android:name=".verifyTherapist" />
+
         <activity android:name=".viewTherapist" />
         <activity android:name=".viewPatient" />
         <activity android:name=".Admin" />
         <activity android:name=".Register" />
         <activity android:name=".Therapist" />
         <activity android:name=".Patient" />
-        <activity android:name=".Login"
-            android:exported="true">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
+        <activity
+            android:name=".Login"
+            android:exported="false" >
 
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
         </activity>
         <activity android:name=".MainActivity" />
     </application>

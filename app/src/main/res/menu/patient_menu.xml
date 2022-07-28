@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
 
-
+    <item android:title="ACTION">
+        <menu>
+            <group android:checkableBehavior="single">
     <item
         android:title="HOME"
         android:id="@+id/home"
@@ -20,6 +22,17 @@
         android:icon="@drawable/ic_baseline_message_24"
         />
 
+
+
+
+            </group>
+        </menu>
+    </item>
+
+    <item android:title="ACTION">
+        <menu>
+            <group android:checkableBehavior="single">
+
     <item
         android:title="THERAPIST LIST"
         android:id="@+id/therapistlist"
@@ -31,18 +44,40 @@
         android:id="@+id/notification"
         android:icon="@drawable/ic_baseline_circle_notifications_24"
         />
+                <item
+                    android:title="REVIEW THERAPIST"
+                    android:id="@+id/review"
+                    android:icon="@drawable/ic_baseline_star_24"
+                    />
+
     <item
         android:title="PAY"
         android:id="@+id/pay"
         android:icon="@drawable/ic_baseline_payments_24"
         />
 
+
+            </group>
+        </menu>
+    </item>
+
+    <item android:title="ACTION">
+        <menu>
+            <group android:checkableBehavior="single">
+                <item
+                    android:title="NIGHT/LIGHT MODE"
+                    android:id="@+id/switchmode"
+                    android:icon="@drawable/ic_baseline_nights_stay_24"
+                    />
+
     <item
         android:title="LOGOUT"
         android:id="@+id/logout"
         android:icon="@drawable/ic_baseline_logout_24"
         />
-
+            </group>
+        </menu>
+    </item>
 
 
 </menu>

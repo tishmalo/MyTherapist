@@ -3,8 +3,10 @@ package com.example.mytherapist;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.Toolbar;
 
 import android.content.Intent;
+import android.content.pm.ActivityInfo;
 import android.graphics.Bitmap;
 import android.net.Uri;
 import android.os.Bundle;
@@ -14,10 +16,12 @@ import android.widget.Button;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.bumptech.glide.Glide;
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.OnFailureListener;
 import com.google.android.gms.tasks.OnSuccessListener;
 import com.google.android.gms.tasks.Task;
+import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.storage.FirebaseStorage;
@@ -35,19 +39,31 @@ public class Therapist2 extends AppCompatActivity {
     private Button identity, proceed;
     private String username, email, password;
     private Uri resulturi;
-
+    private de.hdodenhof.circleimageview.CircleImageView profilepic;
+    Toolbar toolbar;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_therapist2);
 
+        setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);
 
+        toolbar=findViewById(R.id.toolBar);
+        setSupportActionBar(toolbar);
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+        //  getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+        toolbar.setNavigationOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                finish();
+            }
+        });
 
         identitytext= findViewById(R.id.identitytext);
         identity= findViewById(R.id.identity);
         proceed= findViewById(R.id.proceed);
-
+        profilepic = findViewById(R.id.therapistpicture);
 
         /**
          * Get data from intent
@@ -79,7 +95,7 @@ public class Therapist2 extends AppCompatActivity {
             public void onClick(View view) {
                 DatabaseReference userDatabaseRef;
 
-                userDatabaseRef= FirebaseDatabase.getInstance().getReference("Therapist");
+                userDatabaseRef= FirebaseDatabase.getInstance().getReference("Therapist_Identity").child(FirebaseAuth.getInstance().getCurrentUser().getUid());
 
                 HashMap map= new HashMap();
 
@@ -140,7 +156,7 @@ public class Therapist2 extends AppCompatActivity {
                                     public void onSuccess(Uri uri) {
                                         String imageuri = uri.toString();
                                         Map getimagemap = new HashMap();
-                                        getimagemap.put("profileimage", imageuri);
+                                        getimagemap.put("identity", imageuri);
                                         getimagemap.put("username", username);
                                         getimagemap.put("email", email);
 
@@ -201,6 +217,7 @@ public class Therapist2 extends AppCompatActivity {
             final String text= resulturi.getPath().trim();
 
             identitytext.setText(text);
+            Glide.with(Therapist2.this).load(resulturi).into(profilepic);
 
         }else{
 

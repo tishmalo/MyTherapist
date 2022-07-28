@@ -11,7 +11,23 @@
         android:id="@+id/therapist"
         android:icon="@drawable/ic_baseline_local_hospital_24"
         />
+    <item
+        android:title="PROBATION"
+        android:id="@+id/probation"
+        android:icon="@drawable/ic_baseline_local_fire_department_24"
+        />
+    <item android:title="ACTION">
+        <menu>
+            <group android:checkableBehavior="single">
 
 
+                <item
+                    android:title="LOGOUT"
+                    android:id="@+id/logout"
+                    android:icon="@drawable/ic_baseline_logout_24"
+                    />
+            </group>
+        </menu>
+    </item>
 
 </menu>

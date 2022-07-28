@@ -10,4 +10,10 @@
     <color name="scarlettered">#FF2400</color>
     <color name="mintgreen">#3EB489</color>
 
+
+    <color name="Text">#FF000000</color>
+    <color name="background">#FFFFFFFF</color>
+
+    <color name="backup">#FF2400</color>
+
 </resources>

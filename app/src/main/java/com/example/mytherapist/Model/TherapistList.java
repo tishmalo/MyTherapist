@@ -4,6 +4,9 @@ public class TherapistList {
 
     private String email, username, profileimage;
 
+    public TherapistList() {
+    }
+
     public TherapistList(String email, String username, String profileimage) {
         this.email = email;
         this.username = username;
@@ -11,27 +14,27 @@ public class TherapistList {
     }
 
 
-    public String getEmail() {
+    public String getemail() {
         return email;
     }
 
-    public void setEmail(String email) {
+    public void setemail(String email) {
         this.email = email;
     }
 
-    public String getUsername() {
+    public String getusername() {
         return username;
     }
 
-    public void setUsername(String username) {
+    public void setusername(String username) {
         this.username = username;
     }
 
-    public String getProfileimage() {
+    public String getprofileimage() {
         return profileimage;
     }
 
-    public void setProfileimage(String profileimage) {
+    public void setprofileimage(String profileimage) {
         this.profileimage = profileimage;
     }
 }

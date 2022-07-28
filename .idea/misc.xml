@@ -3,13 +3,84 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/TISH/StudioProjects/MyTherapist/app/src/main/res/drawable/background_left.xml" value="0.143" />
+        <entry key="..\:/Users/TISH/StudioProjects/MyTherapist/app/src/main/res/drawable/ic_baseline_thumb_up_24.xml" value="0.2155" />
+        <entry key="..\:/Users/TISH/StudioProjects/MyTherapist/app/src/main/res/drawable/ic_baseline_videocam_24.xml" value="0.1795" />
+        <entry key="..\:/Users/TISH/StudioProjects/MyTherapist/app/src/main/res/drawable/navigation_selector.xml" value="0.144" />
+        <entry key="..\:/Users/TISH/StudioProjects/MyTherapist/app/src/main/res/drawable/navigation_view_from_selected.xml" value="0.144" />
+        <entry key="..\:/Users/TISH/StudioProjects/MyTherapist/app/src/main/res/drawable/rounded_sender.xml" value="0.143" />
+        <entry key="..\:/Users/TISH/StudioProjects/MyTherapist/app/src/main/res/layout/activity_admin.xml" value="0.14260385005065856" />
+        <entry key="..\:/Users/TISH/StudioProjects/MyTherapist/app/src/main/res/layout/activity_admin_login.xml" value="0.2028985507246377" />
+        <entry key="..\:/Users/TISH/StudioProjects/MyTherapist/app/src/main/res/layout/activity_admin_therapist.xml" value="0.2028985507246377" />
+        <entry key="..\:/Users/TISH/StudioProjects/MyTherapist/app/src/main/res/layout/activity_admin_verify_patient.xml" value="0.14488348530901723" />
+        <entry key="..\:/Users/TISH/StudioProjects/MyTherapist/app/src/main/res/layout/activity_admin_verify_therapist.xml" value="0.14488348530901723" />
+        <entry key="..\:/Users/TISH/StudioProjects/MyTherapist/app/src/main/res/layout/activity_chat.xml" value="0.13385416666666666" />
+        <entry key="..\:/Users/TISH/StudioProjects/MyTherapist/app/src/main/res/layout/activity_chat_list.xml" value="0.2028985507246377" />
+        <entry key="..\:/Users/TISH/StudioProjects/MyTherapist/app/src/main/res/layout/activity_choose_therapist.xml" value="0.13385416666666666" />
+        <entry key="..\:/Users/TISH/StudioProjects/MyTherapist/app/src/main/res/layout/activity_complaint.xml" value="0.13385416666666666" />
+        <entry key="..\:/Users/TISH/StudioProjects/MyTherapist/app/src/main/res/layout/activity_control.xml" value="0.13385416666666666" />
         <entry key="..\:/Users/TISH/StudioProjects/MyTherapist/app/src/main/res/layout/activity_control2.xml" value="0.17119565217391305" />
+        <entry key="..\:/Users/TISH/StudioProjects/MyTherapist/app/src/main/res/layout/activity_login.xml" value="0.2028985507246377" />
+        <entry key="..\:/Users/TISH/StudioProjects/MyTherapist/app/src/main/res/layout/activity_main.xml" value="0.14488348530901723" />
+        <entry key="..\:/Users/TISH/StudioProjects/MyTherapist/app/src/main/res/layout/activity_message.xml" value="0.13385416666666666" />
+        <entry key="..\:/Users/TISH/StudioProjects/MyTherapist/app/src/main/res/layout/activity_p_r_o_c_e_e_d.xml" value="0.2028985507246377" />
+        <entry key="..\:/Users/TISH/StudioProjects/MyTherapist/app/src/main/res/layout/activity_patient.xml" value="0.2028985507246377" />
+        <entry key="..\:/Users/TISH/StudioProjects/MyTherapist/app/src/main/res/layout/activity_patient2.xml" value="0.13385416666666666" />
+        <entry key="..\:/Users/TISH/StudioProjects/MyTherapist/app/src/main/res/layout/activity_patient3.xml" value="0.13385416666666666" />
+        <entry key="..\:/Users/TISH/StudioProjects/MyTherapist/app/src/main/res/layout/activity_patient_admin.xml" value="0.2028985507246377" />
+        <entry key="..\:/Users/TISH/StudioProjects/MyTherapist/app/src/main/res/layout/activity_patient_chat_list.xml" value="0.13385416666666666" />
+        <entry key="..\:/Users/TISH/StudioProjects/MyTherapist/app/src/main/res/layout/activity_patient_message.xml" value="0.2028985507246377" />
+        <entry key="..\:/Users/TISH/StudioProjects/MyTherapist/app/src/main/res/layout/activity_patient_notification.xml" value="0.2028985507246377" />
+        <entry key="..\:/Users/TISH/StudioProjects/MyTherapist/app/src/main/res/layout/activity_patient_page.xml" value="0.25" />
         <entry key="..\:/Users/TISH/StudioProjects/MyTherapist/app/src/main/res/layout/activity_pay.xml" value="0.20199275362318841" />
+        <entry key="..\:/Users/TISH/StudioProjects/MyTherapist/app/src/main/res/layout/activity_probation.xml" value="0.13125" />
+        <entry key="..\:/Users/TISH/StudioProjects/MyTherapist/app/src/main/res/layout/activity_probation_patient.xml" value="0.20199275362318841" />
+        <entry key="..\:/Users/TISH/StudioProjects/MyTherapist/app/src/main/res/layout/activity_probation_patient2.xml" value="0.20199275362318841" />
+        <entry key="..\:/Users/TISH/StudioProjects/MyTherapist/app/src/main/res/layout/activity_probation_therapist.xml" value="0.20199275362318841" />
+        <entry key="..\:/Users/TISH/StudioProjects/MyTherapist/app/src/main/res/layout/activity_probation_therapist2.xml" value="0.20199275362318841" />
+        <entry key="..\:/Users/TISH/StudioProjects/MyTherapist/app/src/main/res/layout/activity_probation_therapist3.xml" value="0.20199275362318841" />
+        <entry key="..\:/Users/TISH/StudioProjects/MyTherapist/app/src/main/res/layout/activity_register.xml" value="0.2028985507246377" />
+        <entry key="..\:/Users/TISH/StudioProjects/MyTherapist/app/src/main/res/layout/activity_reset_password.xml" value="0.2028985507246377" />
+        <entry key="..\:/Users/TISH/StudioProjects/MyTherapist/app/src/main/res/layout/activity_reviews.xml" value="0.16" />
+        <entry key="..\:/Users/TISH/StudioProjects/MyTherapist/app/src/main/res/layout/activity_schedule.xml" value="0.22" />
+        <entry key="..\:/Users/TISH/StudioProjects/MyTherapist/app/src/main/res/layout/activity_splash_screen.xml" value="0.25" />
+        <entry key="..\:/Users/TISH/StudioProjects/MyTherapist/app/src/main/res/layout/activity_therapist.xml" value="0.13385416666666666" />
+        <entry key="..\:/Users/TISH/StudioProjects/MyTherapist/app/src/main/res/layout/activity_therapist2.xml" value="0.13385416666666666" />
+        <entry key="..\:/Users/TISH/StudioProjects/MyTherapist/app/src/main/res/layout/activity_therapist3.xml" value="0.2028985507246377" />
+        <entry key="..\:/Users/TISH/StudioProjects/MyTherapist/app/src/main/res/layout/activity_therapist_number.xml" value="0.14260385005065856" />
+        <entry key="..\:/Users/TISH/StudioProjects/MyTherapist/app/src/main/res/layout/activity_therapist_page.xml" value="0.21" />
+        <entry key="..\:/Users/TISH/StudioProjects/MyTherapist/app/src/main/res/layout/activity_therapist_reviews.xml" value="0.25" />
+        <entry key="..\:/Users/TISH/StudioProjects/MyTherapist/app/src/main/res/layout/activity_therapist_schedule.xml" value="0.2028985507246377" />
+        <entry key="..\:/Users/TISH/StudioProjects/MyTherapist/app/src/main/res/layout/activity_therapistlist.xml" value="0.1390625" />
+        <entry key="..\:/Users/TISH/StudioProjects/MyTherapist/app/src/main/res/layout/activity_under_review.xml" value="0.13385416666666666" />
+        <entry key="..\:/Users/TISH/StudioProjects/MyTherapist/app/src/main/res/layout/activity_verify_patient.xml" value="0.2056159420289855" />
+        <entry key="..\:/Users/TISH/StudioProjects/MyTherapist/app/src/main/res/layout/activity_verify_therapist.xml" value="0.18" />
+        <entry key="..\:/Users/TISH/StudioProjects/MyTherapist/app/src/main/res/layout/activity_verify_therapist2.xml" value="0.2028985507246377" />
+        <entry key="..\:/Users/TISH/StudioProjects/MyTherapist/app/src/main/res/layout/activity_video_chat.xml" value="0.13385416666666666" />
+        <entry key="..\:/Users/TISH/StudioProjects/MyTherapist/app/src/main/res/layout/activity_view_patient.xml" value="0.14260385005065856" />
+        <entry key="..\:/Users/TISH/StudioProjects/MyTherapist/app/src/main/res/layout/activity_view_therapist.xml" value="0.14" />
+        <entry key="..\:/Users/TISH/StudioProjects/MyTherapist/app/src/main/res/layout/articles_displayed.xml" value="0.2028985507246377" />
+        <entry key="..\:/Users/TISH/StudioProjects/MyTherapist/app/src/main/res/layout/chat_item_left.xml" value="0.1328125" />
+        <entry key="..\:/Users/TISH/StudioProjects/MyTherapist/app/src/main/res/layout/chat_item_right.xml" value="0.13385416666666666" />
+        <entry key="..\:/Users/TISH/StudioProjects/MyTherapist/app/src/main/res/layout/confirmed_schedule.xml" value="0.2028985507246377" />
+        <entry key="..\:/Users/TISH/StudioProjects/MyTherapist/app/src/main/res/layout/control.xml" value="0.2056159420289855" />
+        <entry key="..\:/Users/TISH/StudioProjects/MyTherapist/app/src/main/res/layout/header.xml" value="0.13385416666666666" />
+        <entry key="..\:/Users/TISH/StudioProjects/MyTherapist/app/src/main/res/layout/headerpatient.xml" value="0.13385416666666666" />
+        <entry key="..\:/Users/TISH/StudioProjects/MyTherapist/app/src/main/res/layout/patient_chat_displayed.xml" value="0.2028985507246377" />
+        <entry key="..\:/Users/TISH/StudioProjects/MyTherapist/app/src/main/res/layout/patient_displayed.xml" value="0.20833333333333334" />
+        <entry key="..\:/Users/TISH/StudioProjects/MyTherapist/app/src/main/res/layout/payment_displayed.xml" value="0.2056159420289855" />
+        <entry key="..\:/Users/TISH/StudioProjects/MyTherapist/app/src/main/res/layout/probation_list.xml" value="0.20199275362318841" />
+        <entry key="..\:/Users/TISH/StudioProjects/MyTherapist/app/src/main/res/layout/therapist_chat_displayed.xml" value="0.2028985507246377" />
+        <entry key="..\:/Users/TISH/StudioProjects/MyTherapist/app/src/main/res/layout/therapist_displayed.xml" value="0.1390625" />
+        <entry key="..\:/Users/TISH/StudioProjects/MyTherapist/app/src/main/res/layout/therapist_reviewed.xml" value="0.20833333333333334" />
+        <entry key="..\:/Users/TISH/StudioProjects/MyTherapist/app/src/main/res/layout/therapist_scheduled.xml" value="0.20199275362318841" />
+        <entry key="..\:/Users/TISH/StudioProjects/MyTherapist/app/src/main/res/menu/admin_menu.xml" value="0.2887179487179487" />
         <entry key="..\:/Users/TISH/StudioProjects/MyTherapist/app/src/main/res/menu/patient_menu.xml" value="0.29322916666666665" />
+        <entry key="..\:/Users/TISH/StudioProjects/MyTherapist/app/src/main/res/menu/therapist_menu.xml" value="0.13385416666666666" />
       </map>
     </option>
   </component>
-  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" project-jdk-name="11" project-jdk-type="JavaSDK">
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="11" project-jdk-type="JavaSDK">
     <output url="file://$PROJECT_DIR$/build/classes" />
   </component>
   <component name="ProjectType">

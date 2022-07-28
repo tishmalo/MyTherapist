@@ -8,12 +8,13 @@
     android:id="@+id/drawerLayout1"
     android:fitsSystemWindows="true"
     tools:openDrawer="start"
-    android:background="@color/white"
+    android:background="@color/background"
     tools:context=".TherapistPage">
 
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:background="@color/background"
         android:orientation="vertical">
 
         <androidx.appcompat.widget.Toolbar
@@ -33,20 +34,32 @@
 
         </androidx.coordinatorlayout.widget.CoordinatorLayout>
 
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/toolBar2"
+            android:id="@+id/myschedule"/>
+
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_centerInParent="true"
+            android:layout_below="@+id/myschedule"
+
             android:id="@+id/emailchat"
+            android:layout_centerHorizontal="true"
             android:text="THERAPIST EMAIL"/>
 
-        <Button
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
             android:layout_marginTop="30dp"
-            android:layout_below="@+id/emailchat"
+            app:fabSize="normal"
+
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_centerHorizontal="true"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="10dp"
+            android:src="@drawable/ic_baseline_videocam_24"
             android:text="LIVE CHAT"
             android:id="@+id/chat"/>
 

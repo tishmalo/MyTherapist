@@ -89,3 +89,11 @@
 
 # Hermes
 -keep class com.facebook.hermes.unicode.** { *; }
+
+
+#Things to do
+#Sanitize username
+#Ensure email and username do not exist before adding to firebase
+#Display profile pics in circle image view
+#Add review and report tracker
+#'.', '#', '$', '[', or ']'

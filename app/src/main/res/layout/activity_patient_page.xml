@@ -8,7 +8,7 @@
       android:id="@+id/drawerLayout1"
       android:fitsSystemWindows="true"
       tools:openDrawer="start"
-      android:background="@color/white"
+      android:background="@color/background"
       tools:context=".PatientPage">
 
   <RelativeLayout
@@ -34,20 +34,32 @@
     </androidx.coordinatorlayout.widget.CoordinatorLayout>
 
 
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/toolBar2"
+        android:id="@+id/newsid"/>
+
+
 <TextView
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
-    android:layout_centerInParent="true"
+    android:layout_below="@+id/newsid"
+
     android:id="@+id/emailchat"
+    android:layout_centerHorizontal="true"
     android:text="THERAPIST EMAIL"/>
 
-<Button
-    android:layout_marginTop="30dp"
-    android:layout_below="@+id/emailchat"
+<com.google.android.material.floatingactionbutton.FloatingActionButton
+
+   android:layout_alignParentBottom="true"
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
-    android:layout_centerHorizontal="true"
-    android:text="LIVE CHAT"
+    app:fabSize="normal"
+    android:layout_alignParentRight="true"
+
+    android:src="@drawable/ic_baseline_videocam_24"
     android:id="@+id/chat"/>
 
   </RelativeLayout>
@@ -59,7 +71,7 @@
       android:layout_gravity="start"
       app:itemIconTint="@drawable/navigation_selector"
       app:itemTextColor="@drawable/navigation_view_from_selected"
-      app:headerLayout="@layout/header"
+      app:headerLayout="@layout/headerpatient"
       android:layout_width="wrap_content"
       android:layout_height="match_parent"/>
 

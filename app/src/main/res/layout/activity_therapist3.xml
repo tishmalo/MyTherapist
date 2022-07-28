@@ -5,8 +5,19 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/black"
+    android:background="@color/background"
     tools:context=".Therapist3">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/barLayout1">
+        <androidx.appcompat.widget.Toolbar
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/toolBar"
+            android:background="@color/mintgreen"/>
+    </com.google.android.material.appbar.AppBarLayout>
 
     <androidx.cardview.widget.CardView
         android:layout_width="wrap_content"
@@ -17,7 +28,7 @@
         <RelativeLayout
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
-            android:background="@color/black"
+            android:background="@color/background"
             >
 
             <de.hdodenhof.circleimageview.CircleImageView
@@ -41,15 +52,15 @@
                 android:text="SELECT FILE"/>
 
             <TextView
+                android:id="@+id/certificateText"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:id="@+id/certificateText"
                 android:layout_below="@+id/therapistpicture"
-                android:layout_toRightOf="@+id/certificate"
-                android:text="UPLOAD IDENTITY CARD"
-                android:textColor="@color/white"
+                android:layout_marginLeft="10dp"
                 android:layout_marginTop="40dp"
-                android:layout_marginLeft="10dp"/>
+                android:layout_toRightOf="@+id/certificate"
+                android:text="UPLOAD CERTIFICATE PHOTO"
+                android:textColor="@color/Text" />
 
 
 
@@ -69,7 +80,7 @@
                 android:layout_height="wrap_content"
                 android:text="FINAL"
 
-                android:textColor="@color/white"
+                android:textColor="@color/Text"
                 android:layout_below="@id/proceed"
                 android:layout_centerHorizontal="true"
                 android:layout_marginTop="60dp"/>

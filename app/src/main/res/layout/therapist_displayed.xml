@@ -13,7 +13,7 @@
         android:layout_marginBottom="5dp"
         android:layout_marginStart="5dp"
         android:layout_marginTop="5dp"
-        android:background="@color/white">
+        android:background="@color/background">
 
         <de.hdodenhof.circleimageview.CircleImageView
             android:id="@+id/userprofileimage"
@@ -32,9 +32,10 @@
                 android:id="@+id/username"
                 android:layout_margin="5dp"
                 android:textSize="18sp"
+                android:textColor="@color/Text"
                 android:textStyle="bold"
                 android:gravity="center"
-                android:textAllCaps="false"/>
+                android:textAllCaps="true"/>
 
             <TextView
                 android:layout_width="match_parent"
@@ -44,6 +45,7 @@
                 android:textSize="18sp"
                 android:textStyle="bold"
                 android:gravity="center"
+                android:textColor="@color/Text"
                 android:textAllCaps="true"/>
 
         </LinearLayout>
@@ -59,6 +61,6 @@
         android:layout_below="@+id/layout1"
         android:layout_marginStart="10dp"
         android:layout_marginTop="2dp"
-        android:background="@color/black"/>
+        android:background="@color/Text"/>
 
 </RelativeLayout>

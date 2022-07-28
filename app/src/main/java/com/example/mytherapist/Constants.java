@@ -17,4 +17,7 @@ public class Constants {
     public static final String PARTYB = "174379"; //same as business shortcode above
     public static final String CALLBACKURL = "https://4b73-105-163-2-177.in.ngrok.io/";
 
+
+
+
 }

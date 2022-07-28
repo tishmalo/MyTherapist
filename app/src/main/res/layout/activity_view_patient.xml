@@ -6,7 +6,20 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
+
     tools:context=".viewPatient">
+
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/barLayout1">
+        <androidx.appcompat.widget.Toolbar
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/toolBar"
+            android:background="@color/mintgreen"/>
+    </com.google.android.material.appbar.AppBarLayout>
 
     <androidx.cardview.widget.CardView
         android:layout_width="wrap_content"
@@ -14,39 +27,31 @@
         android:layout_gravity="center">
     <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        android:background="@color/background">
 
-        <androidx.appcompat.widget.AppCompatImageView
-            android:layout_width="200dp"
+        <ImageView
+            android:layout_width="match_parent"
             android:layout_height="200dp"
             android:layout_centerHorizontal="true"
             android:layout_marginTop="100dp"
             android:id="@+id/showPhotoio"/>
-        <androidx.appcompat.widget.AppCompatImageView
-            android:layout_width="200dp"
+
+        <ImageView
+            android:id="@+id/showIdentity"
+            android:layout_width="match_parent"
             android:layout_height="200dp"
             android:layout_centerInParent="true"
-            android:layout_marginTop="20dp"
-            android:id="@+id/showIdentity"/>
+            android:layout_marginTop="40dp" />
 
         <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:id="@+id/reject"
             android:text="REJECT"
+            android:layout_centerInParent="true"
             android:layout_below="@+id/showIdentity"
             android:layout_marginTop="50dp"/>
-
-        <Button
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:id="@+id/verify"
-            android:text="VERIFY"
-            android:layout_toRightOf="@id/reject"
-            android:layout_marginLeft="20dp"
-            android:layout_below="@+id/showIdentity"
-            android:layout_marginTop="50dp"/>
-
 
 
 
